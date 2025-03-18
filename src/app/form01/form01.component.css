@@ -162,9 +162,7 @@ button {
     margin-left: 300px;
     text-align: left;
     color: #A52A2A;
-    font-weight: 800";
-     class="indented-list-item";
-
+    font-weight: 800
 }
 
 @media screen and (max-width: 768px) {

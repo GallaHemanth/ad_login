@@ -9,24 +9,24 @@ import { MyloginComponent } from '../mylogin/mylogin.component';
 import { MyregisterComponent } from '../myregister/myregister.component';
 import { NgModule } from '@angular/core';
 
-const routes: Routes = [
-  { path: '', component: MyloginComponent },
-  { path: 'mylogin', component: MyloginComponent },
-  { path: 'myregister', component: MyregisterComponent },
-];
+// const routes: Routes = [
+//   { path: '', component: MyloginComponent },
+//   { path: 'mylogin', component: MyloginComponent },
+//   { path: 'myregister', component: MyregisterComponent },
+// ];
 
-// @Component({
-//   selector: 'app-form01',
-//   standalone: true,
-//   imports: [FormsModule, CommonModule, PerformComponent, QualformComponent, PartformComponent],
-//   templateUrl: './form01.component.html',
-//   styleUrl: './form01.component.css'
-// })
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+@Component({
+  selector: 'app-form01',
+  standalone: true,
+  imports: [FormsModule, CommonModule, PerformComponent, QualformComponent, PartformComponent],
+  templateUrl: './form01.component.html',
+  styleUrl: './form01.component.css'
 })
+
+// @NgModule({
+//   imports: [RouterModule.forRoot(routes)],
+//   exports: [RouterModule]
+// })
 
 
 export class Form01Component implements AfterViewInit, OnInit {
